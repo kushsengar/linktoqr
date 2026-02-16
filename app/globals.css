@@ -1235,3 +1235,23 @@ input[type="color"]::-webkit-color-swatch {
         text-align: center;
     }
 }
+
+/* ===== Pricing Toast ===== */
+.pricing-toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1a1a2e;
+    border: 1px solid var(--accent);
+    color: var(--text-primary);
+    padding: 14px 24px;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    box-shadow: 0 8px 30px rgba(124, 92, 252, 0.25);
+    z-index: 9999;
+    cursor: pointer;
+    animation: slideUp 0.3s ease;
+    max-width: 90%;
+    text-align: center;
+}

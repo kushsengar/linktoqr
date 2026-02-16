@@ -12,6 +12,7 @@
 
 import QRGenerator from '@/components/QRGenerator';
 import Header from '@/components/Header';
+import PricingCards from '@/components/PricingCards';
 
 export default function HomePage() {
     return (
@@ -55,46 +56,7 @@ export default function HomePage() {
                     </div>
                 </section>
 
-                {/* Pricing */}
-                <section className="pricing-section">
-                    <h2 className="section-title">Simple pricing</h2>
-                    <p className="section-subtitle">Start free. Upgrade when you grow.</p>
-                    <div className="pricing-grid">
-                        <div className="price-card">
-                            <div className="price-tier">Free</div>
-                            <div className="price-amount">₹0<span>/forever</span></div>
-                            <ul className="price-features">
-                                <li>Unlimited static QR</li>
-                                <li>2 dynamic QR codes</li>
-                                <li>Basic scan count</li>
-                            </ul>
-                            <button className="price-btn price-btn-active">✓ Free forever</button>
-                        </div>
-                        <div className="price-card featured">
-                            <div className="price-badge">Popular</div>
-                            <div className="price-tier">Pro</div>
-                            <div className="price-amount">₹149<span>/month</span></div>
-                            <ul className="price-features">
-                                <li>50 dynamic QR codes</li>
-                                <li>Full scan analytics</li>
-                                <li>Edit URL after printing</li>
-                                <li>QR expiration dates</li>
-                            </ul>
-                            <button className="price-btn price-btn-primary">Upgrade to Pro</button>
-                        </div>
-                        <div className="price-card">
-                            <div className="price-tier">Business</div>
-                            <div className="price-amount">₹399<span>/month</span></div>
-                            <ul className="price-features">
-                                <li>Unlimited dynamic QR</li>
-                                <li>Password-protected QR</li>
-                                <li>SVG high-res download</li>
-                                <li>Priority support</li>
-                            </ul>
-                            <button className="price-btn">Upgrade to Business</button>
-                        </div>
-                    </div>
-                </section>
+                <PricingCards />
 
                 <footer className="footer">
                     <p>100% open source · Your data stays yours · Built in India 🇮🇳</p>
