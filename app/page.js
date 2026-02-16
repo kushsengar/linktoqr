@@ -1,13 +1,8 @@
 /**
- * app/page.js — Home Page
+ * app/page.js — Home Page (UX-optimized)
  * 
- * LEARNING: This is a "Server Component" by default in Next.js App Router.
- * But since we import client components (QRGenerator, Header), those parts
- * hydrate in the browser while the rest is pre-rendered on the server.
- * 
- * This is the best of both worlds:
- * - Google sees fully rendered HTML (great for SEO)
- * - Users get interactive React components (great for UX)
+ * FLOW: use case → success → discovery → upgrade
+ * NOT:  tool → features → pricing
  */
 
 import QRGenerator from '@/components/QRGenerator';
@@ -18,7 +13,6 @@ import seoPages from '@/lib/seo-pages.json';
 export default function HomePage() {
     return (
         <>
-            {/* Background orbs */}
             <div className="bg-orbs" aria-hidden="true">
                 <div className="orb orb-1"></div>
                 <div className="orb orb-2"></div>
@@ -29,47 +23,49 @@ export default function HomePage() {
                 <Header />
 
                 <div className="hero">
-                    <h1>Turn any link into a<br /><span className="gradient-text">trackable QR code</span></h1>
-                    <p className="subtitle">Create dynamic QR codes. Track every scan. Change the destination anytime — even after printing.</p>
+                    <h1>Create a QR code for<br /><span className="gradient-text">anything in seconds</span></h1>
+                    <p className="subtitle">WiFi, payments, menus, social media — pick your use case and generate a free QR code instantly.</p>
                 </div>
 
                 <QRGenerator />
 
-                {/* How it Works */}
+                {/* How it Works — keep simple */}
                 <section className="how-it-works">
                     <h2 className="section-title">How it works</h2>
                     <div className="steps-grid">
                         <div className="step-card">
                             <div className="step-number">1</div>
-                            <h3>Paste your URL</h3>
-                            <p>Enter any link — website, menu, form, payment page.</p>
+                            <h3>Pick your use case</h3>
+                            <p>WiFi, payments, WhatsApp, menus, social media, or any link.</p>
                         </div>
                         <div className="step-card">
                             <div className="step-number">2</div>
-                            <h3>Choose Static or Dynamic</h3>
-                            <p><strong>Static</strong> = simple QR, no tracking.<br /><strong>Dynamic</strong> = trackable, editable anytime.</p>
+                            <h3>Paste your link</h3>
+                            <p>Enter your URL and hit generate. Your QR is ready in under 2 seconds.</p>
                         </div>
                         <div className="step-card">
                             <div className="step-number">3</div>
-                            <h3>Track &amp; manage</h3>
-                            <p>Sign up → use Dynamic QR → open <strong>Dashboard</strong> to see scans and edit URLs.</p>
+                            <h3>Download &amp; share</h3>
+                            <p>Print it, share it, stick it anywhere. Enable tracking to see who scans.</p>
                         </div>
                     </div>
                 </section>
 
-                {/* All QR Code Tools — SEO Pages */}
+                {/* QR Code Tools — with micro-descriptions (fix #8) */}
                 <section className="tools-section">
-                    <h2 className="section-title">Free QR Code Tools</h2>
-                    <p className="section-subtitle">Generate QR codes for any platform or use case</p>
-                    <div className="tools-grid">
+                    <h2 className="section-title">Free QR Code Generators</h2>
+                    <p className="section-subtitle">Pick your use case — each tool is optimized for its purpose</p>
+                    <div className="tools-grid-detailed">
                         {seoPages.map(p => (
-                            <a key={p.slug} href={`/${p.slug}`} className="tool-link">
-                                {p.h1.replace('Create ', '').replace('Generate ', '')}
+                            <a key={p.slug} href={`/${p.slug}`} className="tool-card">
+                                <span className="tool-card-name">{p.h1.replace('Create ', '').replace('Generate ', '')}</span>
+                                <span className="tool-card-desc">{p.description.split('.')[0]}</span>
                             </a>
                         ))}
                     </div>
                 </section>
 
+                {/* Pricing — moved below tools (fix #7) */}
                 <PricingCards />
 
                 <footer className="footer">

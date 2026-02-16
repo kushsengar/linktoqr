@@ -1255,3 +1255,293 @@ input[type="color"]::-webkit-color-swatch {
     max-width: 90%;
     text-align: center;
 }
+
+/* ===== Use-Case Selection Cards ===== */
+.usecase-section {
+    text-align: center;
+}
+
+.usecase-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--text-primary);
+}
+
+.usecase-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.usecase-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 18px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition);
+    color: var(--text-primary);
+    font-family: inherit;
+}
+
+.usecase-card:hover {
+    border-color: var(--accent);
+    background: rgba(124, 92, 252, 0.08);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.usecase-emoji {
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+}
+
+.usecase-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.usecase-desc {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+}
+
+/* ===== Selected Case Header ===== */
+.selected-case-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.usecase-emoji-lg {
+    font-size: 1.8rem;
+}
+
+.selected-case-header h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 14px;
+    font-family: inherit;
+    transition: color var(--transition);
+}
+
+.back-btn:hover {
+    color: var(--text-primary);
+}
+
+/* ===== Track Scans Toggle ===== */
+.track-toggle {
+    margin: 18px 0;
+}
+
+.track-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.track-label input[type="checkbox"] {
+    display: none;
+}
+
+.track-switch {
+    width: 40px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 99px;
+    position: relative;
+    transition: background var(--transition);
+    flex-shrink: 0;
+}
+
+.track-switch::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--text-muted);
+    transition: all var(--transition);
+}
+
+.track-label input:checked+.track-switch {
+    background: var(--accent);
+}
+
+.track-label input:checked+.track-switch::after {
+    left: 21px;
+    background: white;
+}
+
+.track-hint {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+    padding-left: 50px;
+}
+
+/* ===== Advanced Options Collapse ===== */
+.advanced-section {
+    margin-bottom: 18px;
+}
+
+.advanced-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: left;
+    font-family: inherit;
+    transition: color var(--transition);
+}
+
+.advanced-toggle:hover {
+    color: var(--text-secondary);
+}
+
+/* ===== Brighter CTA (fix #10) ===== */
+.generator-card {
+    position: relative;
+}
+
+.cta-bright {
+    background: linear-gradient(135deg, #8b6aff, #6246ea, #7c5cfc) !important;
+    box-shadow: 0 4px 24px rgba(124, 92, 252, 0.35);
+    font-size: 0.95rem !important;
+    letter-spacing: 0.01em;
+}
+
+.cta-bright:hover:not(:disabled) {
+    box-shadow: 0 6px 32px rgba(124, 92, 252, 0.5) !important;
+    transform: translateY(-2px) !important;
+    filter: brightness(1.1);
+}
+
+/* ===== Test Scan Hint ===== */
+.test-scan-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding: 10px 16px;
+    background: rgba(62, 207, 207, 0.06);
+    border: 1px solid rgba(62, 207, 207, 0.15);
+    border-radius: var(--radius-sm);
+    animation: pulse-hint 2s ease-in-out infinite;
+}
+
+.test-scan-icon {
+    font-size: 1.2rem;
+}
+
+.test-scan-hint p {
+    font-size: 0.82rem;
+    color: var(--accent-secondary);
+    font-weight: 500;
+}
+
+@keyframes pulse-hint {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* ===== Create Another ===== */
+.create-another-btn {
+    margin-top: 18px;
+    background: none;
+    border: 1px dashed var(--border);
+    color: var(--text-muted);
+    padding: 10px 20px;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all var(--transition);
+    width: 100%;
+}
+
+.create-another-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* ===== Tools Grid with Descriptions ===== */
+.tools-grid-detailed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.tool-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 14px 16px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+    text-decoration: none;
+}
+
+.tool-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-1px);
+    text-decoration: none;
+}
+
+.tool-card-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.tool-card-desc {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+/* ===== Updated Responsive ===== */
+@media (max-width: 600px) {
+    .usecase-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tools-grid-detailed {
+        grid-template-columns: 1fr;
+    }
+}

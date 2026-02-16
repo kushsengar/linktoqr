@@ -74,7 +74,7 @@ export default function Header() {
                 <div className="nav-actions">
                     {loggedIn ? (
                         <>
-                            <a href="/dashboard" className="nav-btn">📊 Dashboard</a>
+                            <a href="/dashboard" className="nav-btn">My QR Codes</a>
                             <button className="nav-btn" onClick={logout}>Log out</button>
                         </>
                     ) : (
