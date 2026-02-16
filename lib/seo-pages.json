@@ -1,0 +1,342 @@
+[
+    {
+        "slug": "wifi-qr-code-generator",
+        "title": "Free WiFi QR Code Generator",
+        "h1": "Create a WiFi QR Code",
+        "description": "Generate a QR code for your WiFi network. Guests scan it to connect instantly — no typing passwords.",
+        "body": "Stop telling guests your WiFi password. Create a QR code that connects them automatically when scanned. Works with all smartphones.",
+        "faq": [
+            {
+                "q": "How does a WiFi QR code work?",
+                "a": "The QR encodes your network name, password, and security type. When scanned, the phone auto-connects to your WiFi."
+            },
+            {
+                "q": "Is my WiFi password stored on LinkToQR?",
+                "a": "For static QR: no, everything stays in your browser. For dynamic QR: the encoded data is stored securely on our server."
+            }
+        ]
+    },
+    {
+        "slug": "upi-payment-qr-code-generator",
+        "title": "Free UPI Payment QR Code Generator",
+        "h1": "Generate UPI Payment QR Code",
+        "description": "Create a QR code for UPI payments. Customers scan to pay via Google Pay, PhonePe, Paytm, and more.",
+        "body": "Accept UPI payments instantly with a QR code. Print it at your shop, add it to invoices, or share online. Supports all UPI apps.",
+        "faq": [
+            {
+                "q": "Which UPI apps work with this QR code?",
+                "a": "All UPI-compliant apps: Google Pay, PhonePe, Paytm, BHIM, Amazon Pay, and more."
+            },
+            {
+                "q": "Can I set a fixed payment amount?",
+                "a": "Yes, you can encode a fixed amount in the UPI QR code. The customer will see it pre-filled."
+            }
+        ]
+    },
+    {
+        "slug": "whatsapp-qr-code-generator",
+        "title": "Free WhatsApp QR Code Generator",
+        "h1": "Create a WhatsApp QR Code",
+        "description": "Generate a QR code that opens a WhatsApp chat. Perfect for business cards, flyers, and customer support.",
+        "body": "Let customers message you on WhatsApp with a single scan. Pre-fill a greeting message so they don't have to type anything.",
+        "faq": [
+            {
+                "q": "What URL format does WhatsApp QR use?",
+                "a": "It uses https://wa.me/91XXXXXXXXXX?text=Hello. You enter this URL and we generate the QR."
+            },
+            {
+                "q": "Do I need WhatsApp Business?",
+                "a": "No, it works with both regular WhatsApp and WhatsApp Business."
+            }
+        ]
+    },
+    {
+        "slug": "instagram-qr-code-generator",
+        "title": "Free Instagram QR Code Generator",
+        "h1": "Create an Instagram QR Code",
+        "description": "Generate a QR code that opens your Instagram profile. Grow followers from print, events, and packaging.",
+        "body": "Turn any physical surface into a follower growth channel. Print this QR on business cards, product packaging, stickers, or event banners.",
+        "faq": [
+            {
+                "q": "What link should I use?",
+                "a": "Use https://instagram.com/yourusername. The QR will open your profile directly."
+            },
+            {
+                "q": "Can I track how many followers came from the QR?",
+                "a": "With Dynamic QR, you can track total scans. Combine with Instagram Insights to estimate conversions."
+            }
+        ]
+    },
+    {
+        "slug": "youtube-qr-code-generator",
+        "title": "Free YouTube QR Code Generator",
+        "h1": "Create a YouTube QR Code",
+        "description": "Generate a QR code for any YouTube video or channel. Ideal for presentations, classrooms, and marketing.",
+        "body": "Link any YouTube video, playlist, or channel to a scannable QR code. Perfect for teachers, marketers, and presenters.",
+        "faq": [
+            {
+                "q": "Can I link to a specific video timestamp?",
+                "a": "Yes! Use a YouTube URL with a timestamp (e.g., ?t=120) and the QR will open at that moment."
+            },
+            {
+                "q": "Does it work with YouTube Shorts?",
+                "a": "Yes, any YouTube URL works including Shorts, playlists, and live streams."
+            }
+        ]
+    },
+    {
+        "slug": "google-maps-qr-code-generator",
+        "title": "Free Google Maps QR Code Generator",
+        "h1": "Create a Google Maps QR Code",
+        "description": "Generate a QR code for any location on Google Maps. Perfect for event invitations and business directions.",
+        "body": "Help people find your location instantly. Scan this QR to open Google Maps with your exact pin. Great for weddings, offices, and restaurants.",
+        "faq": [
+            {
+                "q": "How do I get my Google Maps link?",
+                "a": "Open Google Maps, find your location, click 'Share', and copy the link. Paste it here."
+            },
+            {
+                "q": "Does it work on Apple Maps?",
+                "a": "The QR opens a Google Maps URL. On iPhone, it opens in the browser or Google Maps app if installed."
+            }
+        ]
+    },
+    {
+        "slug": "restaurant-menu-qr-code",
+        "title": "Free Restaurant Menu QR Code Generator",
+        "h1": "Create a Menu QR Code",
+        "description": "Generate a QR code for your restaurant menu. Customers scan to view your menu — no app needed.",
+        "body": "Contactless dining made easy. Upload your menu as a PDF or link, generate a QR code, and print it on table tents. Update your menu anytime with Dynamic QR.",
+        "faq": [
+            {
+                "q": "Can I update the menu without reprinting QR codes?",
+                "a": "Yes! Use Dynamic QR mode. Change the destination URL anytime — the printed QR code stays the same."
+            },
+            {
+                "q": "What file format should my menu be?",
+                "a": "Host your menu as a PDF on Google Drive, or use a website. Then paste the link here."
+            }
+        ]
+    },
+    {
+        "slug": "vcard-qr-code-generator",
+        "title": "Free vCard QR Code Generator",
+        "h1": "Create a Digital Business Card QR",
+        "description": "Generate a QR code for your digital business card. Share your contact info with a single scan.",
+        "body": "Replace paper business cards with a scannable QR code. The contact saves directly to their phone — name, email, phone, company, all in one scan.",
+        "faq": [
+            {
+                "q": "What is a vCard QR code?",
+                "a": "A vCard QR encodes your contact information (name, phone, email, company) so it auto-saves to the scanner's phone contacts."
+            },
+            {
+                "q": "Can I include my photo?",
+                "a": "Standard vCard QR supports text fields only. For a photo, link to a digital profile page instead."
+            }
+        ]
+    },
+    {
+        "slug": "pdf-qr-code-generator",
+        "title": "Free PDF QR Code Generator",
+        "h1": "Create a QR Code for PDF",
+        "description": "Generate a QR code that opens any PDF file. Share documents, brochures, and reports with a scan.",
+        "body": "Upload your PDF to Google Drive, Dropbox, or any hosting service. Paste the link here and we'll create a QR code that opens it directly.",
+        "faq": [
+            {
+                "q": "Where should I host my PDF?",
+                "a": "Google Drive (set sharing to 'Anyone with the link') is the easiest. Dropbox and OneDrive also work."
+            },
+            {
+                "q": "Can I change the PDF later?",
+                "a": "With Dynamic QR, yes! Just update the destination URL in your Dashboard — the QR code stays the same."
+            }
+        ]
+    },
+    {
+        "slug": "linkedin-qr-code-generator",
+        "title": "Free LinkedIn QR Code Generator",
+        "h1": "Create a LinkedIn QR Code",
+        "description": "Generate a QR code for your LinkedIn profile. Grow your professional network from events and business cards.",
+        "body": "Add a LinkedIn QR to your business card, resume, or conference badge. One scan connects professionals to your profile instantly.",
+        "faq": [
+            {
+                "q": "Where do I find my LinkedIn URL?",
+                "a": "Go to your LinkedIn profile → click 'Contact info' → copy your profile URL (e.g., linkedin.com/in/yourname)."
+            },
+            {
+                "q": "Can I track who scanned my LinkedIn QR?",
+                "a": "With Dynamic QR, you can see scan count. LinkedIn also shows profile views which you can correlate."
+            }
+        ]
+    },
+    {
+        "slug": "event-qr-code-generator",
+        "title": "Free Event QR Code Generator",
+        "h1": "Create an Event QR Code",
+        "description": "Generate a QR code for your event registration, tickets, or details page. Simplify event check-in.",
+        "body": "Create QR codes for event registration links, ticket pages, or Google Calendar events. Print on posters, invitations, or social media.",
+        "faq": [
+            {
+                "q": "Can I use this for event check-in?",
+                "a": "Yes! Link to your check-in page or form. With Dynamic QR, you can track scan counts to monitor attendance."
+            },
+            {
+                "q": "How do I create a Google Calendar event QR?",
+                "a": "Create the event in Google Calendar, copy the event link, and paste it here."
+            }
+        ]
+    },
+    {
+        "slug": "app-download-qr-code",
+        "title": "Free App Download QR Code Generator",
+        "h1": "Create an App Download QR Code",
+        "description": "Generate a QR code that links to your app on the App Store or Google Play. Drive mobile downloads.",
+        "body": "Get more app downloads from physical marketing. Print QR codes on flyers, packaging, and ads that link directly to your app store listing.",
+        "faq": [
+            {
+                "q": "Can it detect iOS vs Android?",
+                "a": "The QR links to one URL. For smart redirection, use a service like onelink.to and paste that link here."
+            },
+            {
+                "q": "Can I track downloads from the QR code?",
+                "a": "With Dynamic QR, you see scan count. Use UTM parameters in your store link for precise attribution."
+            }
+        ]
+    },
+    {
+        "slug": "google-review-qr-code",
+        "title": "Free Google Review QR Code Generator",
+        "h1": "Create a Google Review QR Code",
+        "description": "Generate a QR code that opens your Google Reviews page. Get more 5-star reviews from happy customers.",
+        "body": "Place this QR on receipts, tables, or thank-you cards. Customers scan → your Google review page opens → they leave a review in seconds.",
+        "faq": [
+            {
+                "q": "How do I find my Google review link?",
+                "a": "Search your business on Google → click 'Write a review' → copy the URL from your browser."
+            },
+            {
+                "q": "Can I use this for other review platforms?",
+                "a": "Yes! Paste any review page URL — Yelp, TripAdvisor, Trustpilot, etc."
+            }
+        ]
+    },
+    {
+        "slug": "email-qr-code-generator",
+        "title": "Free Email QR Code Generator",
+        "h1": "Create an Email QR Code",
+        "description": "Generate a QR code that opens a pre-filled email. Scan to email with subject and body ready.",
+        "body": "Use mailto: links to create QR codes that open the email app with pre-filled recipient, subject, and body text. Great for support and feedback.",
+        "faq": [
+            {
+                "q": "What format does the email QR use?",
+                "a": "Use a mailto URL: mailto:you@example.com?subject=Hello&body=Hi%20there. Paste it here."
+            },
+            {
+                "q": "Does it work on all devices?",
+                "a": "Yes, all smartphones and computers recognize mailto links and open the default email app."
+            }
+        ]
+    },
+    {
+        "slug": "facebook-qr-code-generator",
+        "title": "Free Facebook QR Code Generator",
+        "h1": "Create a Facebook QR Code",
+        "description": "Generate a QR code for your Facebook page or profile. Grow your page from offline marketing.",
+        "body": "Link your Facebook business page, profile, or group to a QR code. Print on packaging, posters, and receipts to drive more likes and follows.",
+        "faq": [
+            {
+                "q": "What URL should I use for my Facebook page?",
+                "a": "Go to your Facebook page → copy the URL from the address bar (e.g., facebook.com/yourpage)."
+            },
+            {
+                "q": "Can I link to a specific Facebook post?",
+                "a": "Yes, copy the URL of any individual post and paste it here."
+            }
+        ]
+    },
+    {
+        "slug": "twitter-qr-code-generator",
+        "title": "Free Twitter/X QR Code Generator",
+        "h1": "Create a Twitter/X QR Code",
+        "description": "Generate a QR code for your Twitter/X profile or tweet. Grow followers from print and events.",
+        "body": "Share your X profile, a specific tweet, or a pre-composed tweet via QR code. Perfect for events, slides, and business cards.",
+        "faq": [
+            {
+                "q": "Can I create a QR for a pre-composed tweet?",
+                "a": "Yes! Use https://twitter.com/intent/tweet?text=Hello to create a QR that opens a ready-to-post tweet."
+            },
+            {
+                "q": "Does it work for X (formerly Twitter)?",
+                "a": "Yes, both twitter.com and x.com URLs work. X redirects automatically."
+            }
+        ]
+    },
+    {
+        "slug": "zoom-meeting-qr-code",
+        "title": "Free Zoom Meeting QR Code Generator",
+        "h1": "Create a Zoom Meeting QR Code",
+        "description": "Generate a QR code for your Zoom meeting link. One-scan join for attendees.",
+        "body": "Share Zoom meeting links via QR code on projector slides, printouts, or event signage. Attendees scan to join — no typing meeting IDs.",
+        "faq": [
+            {
+                "q": "Where do I get my Zoom meeting link?",
+                "a": "Open Zoom → Schedule a meeting → copy the join link (e.g., zoom.us/j/123456789)."
+            },
+            {
+                "q": "Can I update the meeting link for next week?",
+                "a": "With Dynamic QR, yes! Update the destination URL in your Dashboard for recurring meetings."
+            }
+        ]
+    },
+    {
+        "slug": "spotify-qr-code-generator",
+        "title": "Free Spotify QR Code Generator",
+        "h1": "Create a Spotify QR Code",
+        "description": "Generate a QR code for any Spotify song, playlist, album, or artist page. Share music offline.",
+        "body": "Share your Spotify playlist at parties, on posters, or on merch. Guests scan → your playlist opens in their Spotify app.",
+        "faq": [
+            {
+                "q": "Does it open the Spotify app directly?",
+                "a": "On mobile, if Spotify is installed, the link opens in the app. Otherwise, it opens in the browser."
+            },
+            {
+                "q": "Can I use a Spotify URI instead of a URL?",
+                "a": "Use the HTTPS URL (open.spotify.com/...) — it works universally on all devices."
+            }
+        ]
+    },
+    {
+        "slug": "telegram-qr-code-generator",
+        "title": "Free Telegram QR Code Generator",
+        "h1": "Create a Telegram QR Code",
+        "description": "Generate a QR code for your Telegram channel, group, or profile. Grow your community offline.",
+        "body": "Print Telegram QR codes on stickers, flyers, and business cards. One scan joins your channel or opens a direct message.",
+        "faq": [
+            {
+                "q": "What URL should I use?",
+                "a": "Use t.me/yourchannel for channels, t.me/yourusername for DMs, or t.me/joinchat/... for groups."
+            },
+            {
+                "q": "Do users need Telegram installed?",
+                "a": "The link works in the browser too, but for the best experience, the Telegram app should be installed."
+            }
+        ]
+    },
+    {
+        "slug": "bitcoin-qr-code-generator",
+        "title": "Free Bitcoin QR Code Generator",
+        "h1": "Create a Bitcoin Payment QR Code",
+        "description": "Generate a QR code for your Bitcoin wallet address. Receive crypto payments with a simple scan.",
+        "body": "Create a Bitcoin QR code for donations, payments, or tips. The scanner's wallet app reads the address instantly — no copy-paste errors.",
+        "faq": [
+            {
+                "q": "What format does the Bitcoin QR use?",
+                "a": "Use bitcoin:YOUR_ADDRESS or paste your wallet address directly. We support both formats."
+            },
+            {
+                "q": "Does it work with other crypto?",
+                "a": "Enter any cryptocurrency address URL, such as ethereum: or litecoin: URIs."
+            }
+        ]
+    }
+]
