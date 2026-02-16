@@ -13,6 +13,7 @@
 import QRGenerator from '@/components/QRGenerator';
 import Header from '@/components/Header';
 import PricingCards from '@/components/PricingCards';
+import seoPages from '@/lib/seo-pages.json';
 
 export default function HomePage() {
     return (
@@ -53,6 +54,19 @@ export default function HomePage() {
                             <h3>Track &amp; manage</h3>
                             <p>Sign up → use Dynamic QR → open <strong>Dashboard</strong> to see scans and edit URLs.</p>
                         </div>
+                    </div>
+                </section>
+
+                {/* All QR Code Tools — SEO Pages */}
+                <section className="tools-section">
+                    <h2 className="section-title">Free QR Code Tools</h2>
+                    <p className="section-subtitle">Generate QR codes for any platform or use case</p>
+                    <div className="tools-grid">
+                        {seoPages.map(p => (
+                            <a key={p.slug} href={`/${p.slug}`} className="tool-link">
+                                {p.h1.replace('Create ', '').replace('Generate ', '')}
+                            </a>
+                        ))}
                     </div>
                 </section>
 
