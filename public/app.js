@@ -460,7 +460,7 @@
         }
         // Show upgrade info
         const prices = { pro: '₹149/month', business: '₹399/month' };
-        showToast('To upgrade to ' + plan.charAt(0).toUpperCase() + plan.slice(1) + ' (' + prices[plan] + '), email hello@linktoqr.com with your account email.', 'info');
+        showToast('To upgrade to ' + plan.charAt(0).toUpperCase() + plan.slice(1) + ' (' + prices[plan] + '), email hello@linktoqr-alpha.vercel.app with your account email.', 'info');
     };
 
     function escapeHtml(text) {

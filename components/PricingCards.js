@@ -20,7 +20,7 @@ export default function PricingCards() {
         }
 
         const prices = { pro: '₹149/month', business: '₹399/month' };
-        setToast(`To upgrade to ${plan.charAt(0).toUpperCase() + plan.slice(1)} (${prices[plan]}), email hello@linktoqr.com with your account email.`);
+        setToast(`To upgrade to ${plan.charAt(0).toUpperCase() + plan.slice(1)} (${prices[plan]}), email hello@linktoqr-alpha.vercel.app with your account email.`);
     }
 
     return (
