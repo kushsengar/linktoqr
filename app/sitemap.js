@@ -8,7 +8,7 @@
 
 import seoPages from '@/lib/seo-pages.json';
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://linktoqr.com';
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://linktoqr-alpha.vercel.app';
 
 export default function sitemap() {
     const staticPages = [
