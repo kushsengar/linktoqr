@@ -21,10 +21,34 @@ const USE_CASES = [
     { id: 'whatsapp', emoji: '💬', label: 'WhatsApp', placeholder: 'https://wa.me/91XXXXXXXXXX?text=Hello', desc: 'Open a chat directly' },
     { id: 'menu', emoji: '🍽️', label: 'Menu / PDF', placeholder: 'https://drive.google.com/your-menu-pdf', desc: 'Contactless dining' },
     { id: 'social', emoji: '📱', label: 'Social Media', placeholder: 'https://instagram.com/yourprofile', desc: 'Grow followers offline' },
+    { id: 'email', emoji: '✉️', label: 'Email', placeholder: 'mailto:you@example.com?subject=Hello&body=Hi%20there', desc: 'Pre-filled email' },
+    { id: 'youtube', emoji: '▶️', label: 'YouTube', placeholder: 'https://youtube.com/watch?v=...', desc: 'Videos & channels' },
+    { id: 'maps', emoji: '📍', label: 'Google Maps', placeholder: 'https://maps.google.com/...', desc: 'Location directions' },
+    { id: 'instagram', emoji: '📸', label: 'Instagram', placeholder: 'https://instagram.com/yourprofile', desc: 'Grow followers' },
+    { id: 'linkedin', emoji: '💼', label: 'LinkedIn', placeholder: 'https://linkedin.com/in/yourname', desc: 'Professional network' },
+    { id: 'facebook', emoji: '👍', label: 'Facebook', placeholder: 'https://facebook.com/yourpage', desc: 'Page & profile' },
+    { id: 'twitter', emoji: '🐦', label: 'Twitter / X', placeholder: 'https://twitter.com/yourhandle', desc: 'Tweets & profile' },
+    { id: 'event', emoji: '🎟️', label: 'Event', placeholder: 'https://your-event-registration-link.com', desc: 'Event check-in' },
+    { id: 'app', emoji: '📲', label: 'App Download', placeholder: 'https://play.google.com/store/apps/...', desc: 'Drive installs' },
+    { id: 'review', emoji: '⭐', label: 'Google Review', placeholder: 'https://g.page/your-business/review', desc: 'Get 5-star reviews' },
+    { id: 'pdf', emoji: '📄', label: 'PDF', placeholder: 'https://drive.google.com/your-pdf-link', desc: 'Share documents' },
+    { id: 'vcard', emoji: '👤', label: 'vCard', placeholder: 'https://yourdigitalbusinesscard.com', desc: 'Digital biz card' },
+    { id: 'zoom', emoji: '🎥', label: 'Zoom', placeholder: 'https://zoom.us/j/123456789', desc: 'One-scan join' },
+    { id: 'spotify', emoji: '🎵', label: 'Spotify', placeholder: 'https://open.spotify.com/playlist/...', desc: 'Share music' },
+    { id: 'telegram', emoji: '✈️', label: 'Telegram', placeholder: 'https://t.me/yourchannel', desc: 'Channel & groups' },
+    { id: 'bitcoin', emoji: '₿', label: 'Bitcoin', placeholder: 'bitcoin:YOUR_WALLET_ADDRESS', desc: 'Crypto payments' },
 ];
 
-export default function QRGenerator() {
-    const [selectedCase, setSelectedCase] = useState(null);
+// Only show the first 6 use cases in the picker grid (others are accessed via SEO pages)
+const PICKER_CASES = USE_CASES.slice(0, 6);
+
+export default function QRGenerator({ initialUseCase }) {
+    const [selectedCase, setSelectedCase] = useState(() => {
+        if (initialUseCase) {
+            return USE_CASES.find(uc => uc.id === initialUseCase) || null;
+        }
+        return null;
+    });
     const [url, setUrl] = useState('');
     const [trackScans, setTrackScans] = useState(false);
     const [showAdvanced, setShowAdvanced] = useState(false);
@@ -142,7 +166,7 @@ export default function QRGenerator() {
                 <div className="usecase-section">
                     <p className="usecase-label">What do you want to create?</p>
                     <div className="usecase-grid">
-                        {USE_CASES.map(uc => (
+                        {PICKER_CASES.map(uc => (
                             <button key={uc.id} className="usecase-card" onClick={() => selectCase(uc)}>
                                 <span className="usecase-emoji">{uc.emoji}</span>
                                 <span className="usecase-name">{uc.label}</span>

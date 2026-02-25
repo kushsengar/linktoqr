@@ -25,6 +25,30 @@ import seoPages from '@/lib/seo-pages.json';
 import QRGenerator from '@/components/QRGenerator';
 import Header from '@/components/Header';
 
+// Map SEO page slugs to QRGenerator use-case IDs
+const SLUG_TO_USECASE = {
+    'wifi-qr-code-generator': 'wifi',
+    'upi-payment-qr-code-generator': 'upi',
+    'whatsapp-qr-code-generator': 'whatsapp',
+    'instagram-qr-code-generator': 'instagram',
+    'youtube-qr-code-generator': 'youtube',
+    'google-maps-qr-code-generator': 'maps',
+    'restaurant-menu-qr-code': 'menu',
+    'vcard-qr-code-generator': 'vcard',
+    'pdf-qr-code-generator': 'pdf',
+    'linkedin-qr-code-generator': 'linkedin',
+    'event-qr-code-generator': 'event',
+    'app-download-qr-code': 'app',
+    'google-review-qr-code': 'review',
+    'email-qr-code-generator': 'email',
+    'facebook-qr-code-generator': 'facebook',
+    'twitter-qr-code-generator': 'twitter',
+    'zoom-meeting-qr-code': 'zoom',
+    'spotify-qr-code-generator': 'spotify',
+    'telegram-qr-code-generator': 'telegram',
+    'bitcoin-qr-code-generator': 'bitcoin',
+};
+
 // Pre-generate all SEO pages at build time
 export function generateStaticParams() {
     return seoPages.map(page => ({ slug: page.slug }));
@@ -76,7 +100,7 @@ export default function SeoPage({ params }) {
                     <p className="subtitle">{page.description}</p>
                 </div>
 
-                <QRGenerator />
+                <QRGenerator initialUseCase={SLUG_TO_USECASE[page.slug]} />
 
                 {/* SEO Content */}
                 <section className="seo-content">
